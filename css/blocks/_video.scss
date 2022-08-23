@@ -1,0 +1,9 @@
+@media (max-width:767px){
+    .video_wrapper , .videoIframe, .videoPoster{
+        width: 320px !important;
+        height: 175px !important;
+    }
+    .video_wrapper_full{
+        padding-top: 0 !important;
+    }
+}

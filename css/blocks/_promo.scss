@@ -1,0 +1,261 @@
+.promo {
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+    &__right {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+
+        &__img {
+            width: 30vw;
+            height: auto;
+        }
+
+        &__text {
+            width: 300px;
+            color: #292929;
+            font-size: 14px;
+            font-family: 'Gilroy', Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            text-align: right;
+            margin-top: 30px;
+        }
+    }
+
+    &__left {
+
+
+        &__title {
+            color: #292929;
+            font-size: 24px;
+            font-family: 'Gilroy', Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 600;
+            width: 583px;
+            margin: 0;
+
+        }
+
+        &__secondTitle {
+            color: #292929;
+            font-size: 44px;
+            font-family: 'Gilroy', Arial, sans-serif;
+            line-height: 1.16;
+            font-weight: bold;
+            width: 583px;
+            margin: 0;
+            margin-top: 10px;
+        }
+
+        &__audio {
+            display: flex;
+
+            &__card {
+                display: flex;
+                margin-top: 20px;
+
+                &__text {
+                    height: 60px;
+                    width: 140px;
+                    margin: 15px;
+                    margin-right: 10px;
+                    color: #292929;
+                    font-size: 14px;
+                    font-family: 'Gilroy', 'Arial', sans-serif;
+                    line-height: 1.36;
+                    font-weight: 400;
+                }
+
+                &__img{
+                    cursor: pointer;
+                }
+            }
+
+            
+        }
+
+        &__free {
+            color: #292929;
+            font-size: 24px;
+            font-family: 'Gilroy', Arial, sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            margin-top: 13px;
+            margin-bottom: 0px;
+        }
+
+        &__list {
+            padding-left: 15px;
+            margin-top: 20px;
+
+
+            &__el {
+                color: #0cbe90;
+                margin-bottom: 10px;
+
+                &__text {
+                    color: #292929;
+                    font-size: 14px;
+                    font-family: 'Gilroy', Arial, sans-serif;
+                    line-height: 1.4;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &__form{
+            width: 550px;
+            margin-top: 40px;
+        }
+
+    }
+}
+
+.policy{
+    display: flex;
+    justify-content: flex-end;  
+
+    &__promo{
+        animation: animOut 1s forwards;
+    }
+}
+
+.field:hover ~ .policy > .policy__promo{
+    animation: anim 1s forwards;
+}
+
+@keyframes anim {
+    0% {opacity: 0;}
+    100% {opacity: 1;}  
+}
+
+@keyframes animOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}  
+}
+
+@media (max-width: 1180px) and (min-width: 1000px){
+    .header__left__secondText{
+        width: auto;
+    }
+
+    .promo__left__secondTitle{
+        font-size: 34px;
+    }
+
+    .promo__left__title, .promo__left__secondTitle{
+        width: 450px;
+    }
+
+    .promo__left__audio__card__text{
+        font-size: 11px;
+        align-items: center;
+        height: auto;
+        width: 110px;
+    }
+
+    .fix{
+        width: 48px;
+    }
+
+    .promo__right__img {
+        width: 40vw;
+    }
+
+    .promo{
+        height: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 999px){
+    .promo{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .promo__right{
+        align-items: center;
+        width: auto;
+    }
+
+    .promo__right__text{
+        align-self: flex-end;
+        margin-right: 100px;
+    }
+
+    .promo__right__img{
+        width: 65vw;
+    }
+}
+
+@media (max-width: 767px){
+    .promo__left__title{
+        font-size: 24px;
+    }
+
+    .promo__left__secondTitle{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .promo__left__audio{
+        flex-direction: column;
+    }
+
+    .promo__left__audio__card__img{
+        height: 28px;
+    }
+
+    .promo__left__audio__card__text{
+        height: auto;
+        width: auto;
+        margin-top: 5px;
+    }
+
+    .promo__left__audio__card{
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 426px){
+    .promo__left__title{
+        width: auto;
+    }
+
+    .promo__left__secondTitle{
+        width: auto;
+    }
+
+    .promo__left__form{
+        margin-top: 15px;
+        width: auto;
+    }
+
+    .field{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo__right__text{
+        align-self: center;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .country-phone{
+        margin-bottom: 10px;
+    }
+
+    .policy{
+        display: none;
+    }
+
+    .phone__button{
+        margin-bottom: 20px;
+    }
+}

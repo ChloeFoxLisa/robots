@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Платформа TOMORU — Умный голосовой робот для бизнеса</title>
+    <link rel="stylesheet" href="css/phonecode.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/video.css">
+</head>
+
+<body>
+    <header class="header center">
+        <div class="header__left">
+            <img src="img/logo.svg" alt="logo" class="header__left__logo">
+            <div class="header__left__firstText">
+                <p class="header__left__firstText__text">Лучшие разговорные роботы</p>
+                <img class="header__left__firstText__img" src="img/inc.svg" alt="">
+            </div>
+            <div class="header__left__secondText">В рейтинге Inc. Russia -<br><strong>100 самых успешных стартапов
+                </strong>2021 года</div>
+        </div>
+        <div class="header__right">
+            <a href="#popup-header" class="popup-link"><button class="header__right__button">Стать
+                    партнёров</button></a>
+        </div>
+    </header>
+
+    <header style="display: none;" class="header__mobile">
+        <div class="header__mobile__top">
+            <p class="header__mobile__top__title">Лучшие разговорные роботы</p>
+            <p class="header__mobile__top__text">В рейтинге Inc. Russia -<br><strong>100 самых успешных стартапов
+            </strong>2021 года</p>
+            <img class="header__mobile__top__img" src="img/inc.svg" alt="">
+        </div>
+        <div class="header__mobile__bottom">
+            <img src="img/logo.svg" alt="logo" class="header__left__logo">
+            <a href="#popup-header" class="popup-link"><button class="header__right__button">Стать
+                партнёров</button></a>
+        </div>
+    </header>
+
+    <section class="promo center">
+        <div class="promo__left">
+            <p class="promo__left__title">Умный разговорный робот</p>
+            <h1 class="promo__left__secondTitle">Новый канал привлечения и работы с клиентами</h1>
+            <div class="promo__left__audio">
+                <div class="promo__left__audio__card">
+                    <img id='btn-play' src="img/play.svg" alt="" class="promo__left__audio__card__img">
+                    <p class="promo__left__audio__card__text"><strong>Найдите</strong> горячих клиентов в базе холодных
+                        лидов <span style="color: rgb(153, 153, 153);">1:40</span></p>
+                </div>
+                <div class="promo__left__audio__card">
+                    <img id='btn-play' src="img/play.svg" alt="" class="promo__left__audio__card__img">
+                    <p class="promo__left__audio__card__text"><strong>Напомните</strong> о себе и увеличьте доходимость
+                        <span style="color: rgb(153, 153, 153);">0:47</span></p>
+                </div>
+                <div class="promo__left__audio__card">
+                    <img id='btn-play' src="img/play.svg" alt="" class="promo__left__audio__card__img fix">
+                    <p class="promo__left__audio__card__text"><strong>Автоматизируйте</strong> контроль качества <span
+                            style="color: rgb(153, 153, 153);">0:54</span></p>
+                </div>
+            </div>
+            <p class="promo__left__free"><strong>Запишитесь</strong> на бесплатную консультацию</p>
+            <ul class="promo__left__list">
+                <li class="promo__left__list__el"><span class="promo__left__list__el__text">Узнайте подходит ли робот
+                        для вашей компании</span></li>
+                <li class="promo__left__list__el"><span class="promo__left__list__el__text">Посмотрите успешные кейсы c
+                        вашей задачей</span></li>
+                <li class="promo__left__list__el"><span class="promo__left__list__el__text">Поговорите с роботом
+                        вживую</span></li>
+            </ul>
+            <form action="/send-mail.php" id="form-promo" class="promo__left__form">
+                <div class="field">
+                    <input class="phone _req-promo" type="text" id="phone" name="phone" placeholder="(999) 999-9999">
+                    <!-- <a href="#popup-done" class="popup-link"> -->
+                        <button class="phone__button" type="submit">Получить консультацию</button>
+                    <!-- </a> -->
+                </div>
+                <div class="policy">
+                    <div type="button" class="popup__content__block2__policy policy__promo">Нажимая кнопку, вы соглашаетесь с
+                        политикой<br>
+                        обработки персональных данных</div>
+                </div>
+
+            </form>
+        </div>
+        <div class="promo__right">
+            <img class="promo__right__img" src="img/promo-img.png" alt="promo-img">
+            <p class="promo__right__text">В основе сервиса Tomoru опыт основателей и еще 41 эксперта команды Tomoru</p>
+        </div>
+    </section>
+
+    <section class="calls center">
+        <h3 class="calls__header">Больше 100 000 звонков в день</h3>
+        <p class="calls__text">для клиентов TOMORU</p>
+        <div class="calls__img-box">
+            <img src="./img/img-card-1.svg" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-2.svg" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-3.svg" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-4.svg" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-5.webp" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-6.svg" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-7.svg" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-8.webp" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-9.webp" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-10.png" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-11.webp" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-12.svg" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-13.webp" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-14.webp" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-15.png" alt="" class="calls__img-box__card">
+            <img src="./img/img-card-16.webp" alt="" class="calls__img-box__card">
+        </div>
+    </section>
+
+    <section class="cases center">
+        <h2 class="cases__header">Применение<br>голосового робота</h3>
+            <p class="cases__text">Популярные кейсы TOMORU</p>
+            <div class="cases__box">
+                <div class="cases__box__card">
+                    <div class="cases__box__card__wrapper">
+                        <div class="cases__box__card__tags">
+                            <p class="cases__box__card__tags__tag1">Строительство</p>
+                            <p class="cases__box__card__tags__tag2">Fast Track</p>
+                        </div>
+                        <p class="cases__box__card__header">Продали строиматериалы</p>
+                        <p class="cases__box__card__text">Компания: Браст Фанера Сервис</p>
+                        <div class="cases__box__card__imgs">
+                            <img src="./img/brast.webp" alt="brast" class="cases__box__card__imgs__img1" style="width: 116px;
+                        height: 42px;
+                        margin-top: 20%;">
+                            <img src="./img/brast2.webp" alt="brast" class="cases__box__card__imgs__img2">
+                        </div>
+                        <div class="cases__box__card__audiobox">
+                            <div class="cases__box__card__audiobox__card">
+                                <img src="./img/playCard.svg" alt="play"
+                                    class="cases__box__card__audiobox__card__audio Brast">
+                                <p class="cases__box__card__audiobox__card__text">Отвечает на сложные вопросы</p>
+                            </div>
+                            <div class="cases__box__card__audiobox__card">
+                                <img src="./img/playCard.svg" alt="play"
+                                    class="cases__box__card__audiobox__card__audio Brast">
+                                <p class="cases__box__card__audiobox__card__text">Рассказывает о компании</p>
+                            </div>
+                            <div class="cases__box__card__audiobox__card">
+                                <img src="./img/playCard.svg" alt="play"
+                                    class="cases__box__card__audiobox__card__audio Brast">
+                                <p class="cases__box__card__audiobox__card__text">Выявляет целевых клиентов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cases__box__card">
+                    <div class="cases__box__card__wrapper">
+                        <div class="cases__box__card__tags">
+                            <p class="cases__box__card__tags__tag1">Недвижимость</p>
+                            <p class="cases__box__card__tags__tag2">Pro</p>
+                        </div>
+                        <p class="cases__box__card__header">Увеличили спрос на недвижимость</p>
+                        <p class="cases__box__card__text">Компания: Новосёл</p>
+                        <div class="cases__box__card__imgs">
+                            <img src="./img/novosel.webp" alt="brast" class="cases__box__card__imgs__img1" style="width: 108px;
+                        height: 30px;
+                        margin-top: 13%;">
+                            <img src="./img/novosel2.webp" alt="brast" class="cases__box__card__imgs__img2"
+                                style="border-radius: 20px;">
+                        </div>
+                        <!-- <div class="cases__box__efficiency">
+                            <div class="cases__box__efficiency__wrapper">
+                                <p class="cases__box__efficiency__title">Эффективность</p>
+                                <div class="cases__box__efficiency__box">
+                                    <div class="cases__box__efficiency__box__card">
+                                        <p class="cases__box__efficiency__box__card__header">51%</p>
+                                        <p class="cases__box__efficiency__box__card__text">Ответили на<br>звонок</p>
+                                    </div>
+                                    <div class="cases__box__efficiency__box__card">
+                                        <p class="cases__box__efficiency__box__card__header">14%</p>
+                                        <p class="cases__box__efficiency__box__card__text">Проявили<br>интерес</p>
+                                    </div>
+                                    <div class="cases__box__efficiency__box__card">
+                                        <p class="cases__box__efficiency__box__card__header">10%</p>
+                                        <p class="cases__box__efficiency__box__card__text">Конверсия в<br>продажи</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="cases__box__card__audiobox">
+                            <div class="cases__box__card__audiobox__card">
+                                <img src="./img/playCard.svg" alt="play"
+                                    class="cases__box__card__audiobox__card__audio Novosel">
+                                <p class="cases__box__card__audiobox__card__text">Квалифицирует клиентов</p>
+                            </div>
+                            <div class="cases__box__card__audiobox__card">
+                                <img src="./img/playCard.svg" alt="play"
+                                    class="cases__box__card__audiobox__card__audio Novosel">
+                                <p class="cases__box__card__audiobox__card__text">Уточняет все детали</p>
+                            </div>
+                            <div class="cases__box__card__audiobox__card">
+                                <img src="./img/playCard.svg" alt="play"
+                                    class="cases__box__card__audiobox__card__audio Novosel">
+                                <p class="cases__box__card__audiobox__card__text">Ценит чужое время</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cases__box__card">
+                    <div class="cases__box__card__wrapper">
+                        <div class="cases__box__card__tags">
+                            <p class="cases__box__card__tags__tag1">Недвижимость</p>
+                            <p class="cases__box__card__tags__tag2">Pro</p>
+                        </div>
+                        <p class="cases__box__card__header">Автоматизировали обработку заявок</p>
+                        <p class="cases__box__card__text">Компания: Apart Sharing</p>
+                        <div class="cases__box__card__imgs">
+                            <img src="./img/apart.webp" alt="brast" class="cases__box__card__imgs__img1" style="width: 116px;
+                        height: 109px;
+                        margin-top: 15%;">
+                            <img src="./img/apart2.webp" alt="brast" class="cases__box__card__imgs__img2">
+                        </div>
+                        <div class="cases__box__card__audiobox">
+                            <div class="cases__box__card__audiobox__card">
+                                <img src="./img/playCard.svg" alt="play"
+                                    class="cases__box__card__audiobox__card__audio Apart">
+                                <p class="cases__box__card__audiobox__card__text">Фиксирует желание клиента</p>
+                            </div>
+                            <div class="cases__box__card__audiobox__card">
+                                <img src="./img/playCard.svg" alt="play"
+                                    class="cases__box__card__audiobox__card__audio Apart">
+                                <p class="cases__box__card__audiobox__card__text">Отправляет ссылку на приложение</p>
+                            </div>
+                            <div class="cases__box__card__audiobox__card">
+                                <img src="./img/playCard.svg" alt="play"
+                                    class="cases__box__card__audiobox__card__audio Apart">
+                                <p class="cases__box__card__audiobox__card__text">Разгружает операторов</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="cases__footer">8 применений умных роботов TOMORU в вашей компании</h2>
+            <div class="cases__buttons">
+                <a href="popup-whatsapp" class="popup-link">
+                    <button class="cases__buttons__whatsapp">
+                        <img src="./img/whatsapp.svg" alt="whatsapp" class="cases__buttons__telegram__img"> Получить в
+                        WhatsApp
+                    </button>
+                </a>
+                <a href="popup-telegram" class="popup-link">
+                    <button class="cases__buttons__telegram">
+                        <img src="./img/telegram.svg" alt="Telegram" class="cases__buttons__telegram__img"> Получить в
+                        Telegram
+                    </button>
+                </a>
+            </div>
+    </section>
+
+    <section class="example center">
+        <h2 class="example__header">Как работает робот</h2>
+        <h3 class="example__text">Протестировали в Sellesta</h3>
+        <div class="video_wrapper video_wrapper_full js-videoWrapper">
+            <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen
+                data-src="https://www.youtube.com/embed/VfxkCtqZP6o" allow="autoplay"></iframe>
+            <button class="videoPoster js-videoPoster"></button>
+        </div>
+        <a href="#popup-youtube" class="popup-link"><button class="example__button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-play-circle" viewBox="0 0 16 16" style="
+            height: 25px;
+            width: 25px;
+            margin-right: 10px;">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                        d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                </svg>
+                Смотреть весь выпуск Sellesta о Tomoru</button></a>
+    </section>
+
+    <section class="tell center">
+        <h2 class="tell__title">Просто расскажите о задаче</h2>
+        <p class="tell__text">Дальше искусственный интеллект<br>сделает все за вас</p>
+
+        <div class="tell__box">
+            <div class="tell__secret">
+                <img src="/img/1.svg" alt="1" class="tell__secret__img">
+                <div class="tell__box__card">
+                    <p class="tell__box__card__header">Запишитесь<br> на консультацию</p>
+                    <p class="tell__box__card__text">Чтобы определить задачу <br>для робота и пообщаться<br>с ним вживую
+                        <br><br>Это займет всего 20 минут.</p>
+                </div>
+            </div>
+            <div class="tell__secret">
+                <img src="/img/2.svg" alt="2" class="tell__secret__img">
+                <div class="tell__box__card">
+                    <p class="tell__box__card__header">Выберите<br>свой тариф</p>
+                    <p class="tell__box__card__text">Следующий шаг — это<br>выбор тарифа и оплата<br>по выставленному
+                        счету.<br><br>Займет 30 секунд.</p>
+                </div>
+            </div>
+            <div class="tell__secret">
+                <img src="/img/done.svg" alt="done" class="tell__secret__img">
+                <div class="tell__box__card">
+                    <p class="tell__box__card__header">Запустите<br>робота!</p>
+                    <p class="tell__box__card__text">Искусственный интеллект<br>за 24 часа создаст для вас<br>робота.
+                        <br><br>А эксперт TOMORU<br>проверит его.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#popup-zoom" class="popup-link"><button class="tell__button">Zoom с экспертом</button></a>
+    </section>
+
+    <section class="robot center">
+        <h2 class="robot__title">Из чего состоит робот</h2>
+        <h3 class="robot__text">Технологии, которые использует TOMORU</h3>
+        <img style="display: none;" src="/img/robot-img-mobile.webp" alt="img" class="robot__img__mobile">
+        <div class="robot__img__box">
+            <img src="/img/robot-img.webp" alt="img" class="robot__img">
+            <img src="/img/robot-left-img.svg" alt="img" class="robot__img__left parallax1">
+            <img src="/img/robot-right-img.svg" alt="img" class="robot__img__right parallax2">
+        </div>
+    </section>
+
+    <section class="comment center">
+        <div class="comment__box">
+            <div class="comment__box__img">
+                <img src="/img/comment-dots.svg" alt="dots" class="comment__box__img__dots">
+                <img src="/img/comment1.webp" alt="photo" class="comment__box__img__photo">
+            </div>
+            <div class="comment__box__text">
+                <h3 class="comment__box__text__header">Чем больше он работает — тем заметнее<br>становится преимущество
+                </h3>
+                <p class="comment__box__text__text">«То, как гибко TOMORU общается, подстраиваясь<br>под собеседника,
+                    делает его не таким, как другие<br>роботы. А способность учиться — усиливает разницу»</p>
+                <p class="comment__box__text__footer">Ярослав Протопопов<br><br>Сооснователь Webcom Mobi<br>Мобильный
+                    маркетинг для бизнеса</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers center">
+        <h2 class="offers__title">Преимущества Tomoru<br>в каждом тарифе</h2>
+        <div class="offers__box">
+            <ul class="offers__box__list">
+                <il class="offers__box__list__el">Регулярное обучение робота</il>
+                <il class="offers__box__list__el">Рекомендации по увеличению эффективности<img src="/img/new.svg"
+                        alt="new" style="margin-left: 7px;"></il>
+                <il class="offers__box__list__el">Статистика звонков с расшифровкой ответов<img class="help" src="/img/new.svg"
+                        alt="new" style="margin-left: 7px;"></il>
+            </ul>
+            <ul class="offers__box__list">
+                <il class="offers__box__list__el">Расшифровка речи собеседника</il>
+                <il class="offers__box__list__el">Техподдержка и персональный аккаунт-менеджер</il>
+                <il class="offers__box__list__el">Система выявления смысла и принятия решения</il>
+            </ul>
+        </div>
+        <hr class="offers__hr">
+        <div class="offers__chart">
+            <div class="offers__chart__text">Оплачиваются минуты разговора робота.<br>Больше минут, больше выгоды <img
+                    src="/img/like.svg" alt="like"></div>
+            <div class="box">
+                <div class="offers__chart__column__price"><strong>1 600</strong> мин</div>
+                <div class="offers__chart__column1">
+                    <div class="offers__chart__column__price"><strong>6,40</strong> ₽/мин</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="offers__chart__column__price"><strong>5 000</strong> мин</div>
+                <div class="offers__chart__column2">
+                    <div class="offers__chart__column__price"><strong>6,00</strong> ₽/мин</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="offers__chart__column__price"><strong>19 000</strong> мин</div>
+                <div class="offers__chart__column3">
+                    <div class="offers__chart__column__price"><strong>5,40</strong> ₽/мин</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="offers__chart__column__price"><strong>32 000</strong> мин</div>
+                <div class="offers__chart__column4">
+                    <div class="offers__chart__column__price"><strong>4,80</strong> ₽/мин</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="offers__chart__column__price"><strong>35 000</strong> мин</div>
+                <div class="offers__chart__column5">
+                    <div class="offers__chart__column__price"><strong>4,40</strong> ₽/мин</div>
+                </div>
+            </div>
+        </div>
+        <div class="offers__container">
+            <a href="#popup-rate" class="popup-link"><button class="offers__button1">Посмотреть все тарифы</button></a>
+            <a href="#popup-offers" class="popup-link"><button class="offers__button2">Рассчитать эффективность</button></a>
+        </div>
+        
+    </section>
+
+    <section class="comment center">
+        <div class="comment__box">
+            <div class="comment__box__img">
+                <img src="/img/comment-dots.svg" alt="dots" class="comment__box__img__dots">
+                <img src="/img/comment2.webp" alt="photo" class="comment__box__img__photo">
+            </div>
+            <div class="comment__box__text">
+                <h3 class="comment__box__text__header">Продажи сегодня, а не через 2 недели –<br>это круто!</h3>
+                <p class="comment__box__text__text">«Он не только стоит меньше наших сотрудников. Но и решает<br>задачи
+                    на порядки быстрее. Там, где отделу продаж нужно 10 дней — робот выдает результат через 1,5 часа»
+                </p>
+                <p class="comment__box__text__footer">Тимофей Белоглазов<br><br>CEO DVIGA, маркетинг, сайты,
+                    crm.<br>Топ-25 digital агентств в Рейтинге Рунета</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="media center">
+        <p class="media__title">Статьи и СМИ</p>
+        <div class="media__container">
+            <div class="media__box">
+                <h3 class="media__box__title">Статьи о Tomoru</h3>
+                <div class="media__box__blocks">
+                    <a href="https://incrussia.ru/understand/top-100/" style="text-decoration: none;">
+                        <div class="media__box__blocks__card">
+                            <img src="/img/brand1.svg" alt="img" class="media__box__blocks__card__img">
+                            <p class="media__box__blocks__card__text">Лучший стартап в сфере разговорных<br>роботов по
+                                версии Inc. Russia</p>
+                        </div>
+                    </a>
+                    <a href="https://www.tinkoff.ru/invest/pulse/" style="text-decoration: none;">
+                        <div class="media__box__blocks__card">
+                            <img src="/img/brand2.svg" alt="img" class="media__box__blocks__card__img">
+                            <p class="media__box__blocks__card__text">Разработчик умных голосовых роботов для бизнеса
+                                Tomoru привлек 50 млн ₽</p>
+                        </div>
+                    </a>
+                    <a href="https://nauka.tass.ru/nauka/6326706" style="text-decoration: none;">
+                        <div class="media__box__blocks__card">
+                            <img src="/img/brand3.svg" alt="img" class="media__box__blocks__card__img">
+                            <p class="media__box__blocks__card__text">Резидент технопарка «Русский» создал искусственный
+                                интеллект для техподдержки</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="media__box">
+                <h3 class="media__box__title">Экспертные колонки</h3>
+                <div class="media__box__blocks">
+                    <a href="https://pro.rbc.ru/news/61f2854e9a79477c381a4f27" style="text-decoration: none;">
+                        <div class="media__box__blocks__card">
+                            <img src="/img/brand4.webp" alt="img" class="media__box__blocks__card__img">
+                            <p class="media__box__blocks__card__text">Вернись, я всё прощу: как продать<br>продукт тем,
+                                кто от него отказался</p>
+                        </div>
+                    </a>
+                    <a href="https://incrussia.ru/understand/sleep-clients/" style="text-decoration: none;">
+                        <div class="media__box__blocks__card">
+                            <img src="/img/brand1.svg" alt="img" class="media__box__blocks__card__img">
+                            <p class="media__box__blocks__card__text">Как продавать спящим клиентам</p>
+                        </div>
+                    </a>
+                    <a href="https://www.cossa.ru/trends/301980/?utm_source=tg-cossa" style="text-decoration: none;">
+                        <div class="media__box__blocks__card">
+                            <img src="/img/brand5.webp" alt="img" class="media__box__blocks__card__img">
+                            <p class="media__box__blocks__card__text">Могут ли 10 предложений Минцифры удержать
+                                IT-специалистов в России</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="question center">
+        <p class="question__title">Есть вопросы?</p>
+        <p class="question__text">Задайте их нашему менеджеру</p>
+        <a href="#popup-question" class="popup-link"><button class="question__button">Задать вопрос</button></a>
+    </section>
+
+    <footer class="footer center">
+        <img src="/img/logo-footer.png" alt="logo" class="footer__logo">
+        <div class="footer__contacts">
+            <p class="footer__contacts__title"><strong>Контакты</strong></p>
+            <p class="footer__contacts__text">г. Москва, ул. Кременчугская, д. 3, к. 3 м. Славянский бульвар</p>
+        </div>
+        <div class="footer__contacts">
+            <p class="footer__contacts__title"><strong>hello@tomoru.ru</strong></p>
+            <p class="footer__contacts__text">+7 499 643 4343</p>
+        </div>
+    </footer>
+
+    <div id="popup-header" class="popup">
+        <div class="popup__body">
+            <a href="" class="popup__close close-popup"><svg role="presentation" class="t-popup__close-icon"
+                    width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg></a>
+            <div class="popup__content">
+                <div class="popup__content__block1">
+                    <div class="popup__content__block1__card">
+
+                    </div>
+                    <div class="popup__content__block1__text">
+                        <p class="popup__content__block1__text__title">Zoom-встреча<br>
+                            с куратором партнерской сети</p>
+                        <ul class="popup__content__block1__text__list">
+                            <li class="popup__content__block1__text__list__el">Возможные формы сотрудничества с Tomoru
+                            </li>
+                            <li class="popup__content__block1__text__list__el">Базовые параметры партнерской программы
+                            </li>
+                            <li class="popup__content__block1__text__list__el">Как начать сотрудничество</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup__content__block2">
+                    <p class="popup__content__block2__title">По какому номеру</p>
+                    <p class="popup__content__block2__text">мы можем подтвердить встречу?</p>
+                    <div class="popup__content__block2__field field">
+                        <form id="form-header" class="popup__content__block2__field">
+                            <input class="popup__content__block2__field__name _req-header" type="text" id="name" name="name"
+                                placeholder="Как вас зовут?">
+                            <input class="popup__content__block2__field__phone _req-header" type="text" id="phonePopup" name="phone"
+                             placeholder="+7 (999) 999-9999">
+                            <!-- <a href="#popup-done" class="popup-link"> -->
+                                <button style="background-color: #0084f4;" class="phone__button" type="submit">Назначить
+                                встречу</button>
+                            <!-- </a> -->
+                        </form>
+                    </div>
+                    <div class="popup__content__block2__policy">Нажимая кнопку, вы соглашаетесь с политикой<br>
+                        обработки персональных данных</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-whatsapp" class="popup">
+        <div class="popup__body">
+            <a href="" class="popup__close close-popup"><svg role="presentation" class="t-popup__close-icon"
+                    width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg></a>
+            <div class="popup__content">
+                <div class="popup__content__block1">
+                    <div class="popup__content__block1__card">
+                        <img src="img/popup-whatsapp.webp" alt="photo" class="popup__content__block1__card__img">
+                    </div>
+                    <div class="popup__content__block1__text">
+                        <p class="popup__content__block1__text__title" style="width: 550px;">8 применений умных роботов
+                            Tomoru</p>
+                        <ul class="popup__content__block1__text__list">
+                            <li class="popup__content__block1__text__list__el green">В каких задачах роботы эффективны
+                                сегодня
+                            </li>
+                            <li class="popup__content__block1__text__list__el green">Какие конверсии ожидать от робота
+                            </li>
+                            <li class="popup__content__block1__text__list__el green">Как происходит процесс внедрения
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup__content__block2">
+                    <p class="popup__content__block2__title">На какой номер вам удобно</p>
+                    <p class="popup__content__block2__text">получить презентацию?</p>
+                    <div class="popup__content__block2__field field">
+                        <form id="form-whatsapp" class="popup__content__block2__field">
+                            <input class="popup__content__block2__field__name _req-whatsapp" type="text" name="name"
+                                placeholder="Как вас зовут?">
+                            <input class="popup__content__block2__field__phone _req-whatsapp" type="text" id="phonePopup-whatsapp"
+                                name="phone" placeholder="+7 (999) 999-9999">
+                                <!-- <a href="#popup-done" class="popup-link"> -->
+                                    <button style="background-color: #0cbe90;" class="phone__button" type="submit">Получить в
+                                WhatsApp</button>
+                            <!-- </a> -->
+                        </form>
+                    </div>
+                    <div class="popup__content__block2__policy">Нажимая кнопку, вы соглашаетесь с политикой<br>
+                        обработки персональных данных</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-telegram" class="popup">
+        <div class="popup__body">
+            <a href="" class="popup__close close-popup"><svg role="presentation" class="t-popup__close-icon"
+                    width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg></a>
+            <div class="popup__content">
+                <div class="popup__content__block1">
+                    <div class="popup__content__block1__card">
+                        <img src="img/popup-telegram.webp" alt="photo" class="popup__content__block1__card__img">
+                    </div>
+                    <div class="popup__content__block1__text">
+                        <p class="popup__content__block1__text__title" style="width: 550px;">8 применений умных роботов
+                            Tomoru</p>
+                        <ul class="popup__content__block1__text__list">
+                            <li class="popup__content__block1__text__list__el">В каких задачах роботы эффективны сегодня
+                            </li>
+                            <li class="popup__content__block1__text__list__el">Какие конверсии ожидать от робота
+                            </li>
+                            <li class="popup__content__block1__text__list__el">Как происходит процесс внедрения</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup__content__block2">
+                    <p class="popup__content__block2__title">На какой номер вам удобно</p>
+                    <p class="popup__content__block2__text">получить презентацию?</p>
+                    <div class="popup__content__block2__field field">
+                        <form id="form-telegram" class="popup__content__block2__field">
+                            <input class="popup__content__block2__field__name _req-telegram" type="text" name="name"
+                                placeholder="Как вас зовут?">
+                            <input class="popup__content__block2__field__phone _req-telegram" type="text" id="phonePopup-telegram"
+                                name="phone" placeholder="+7 (999) 999-9999">
+                                <button style="background-color: #14acf5" class="phone__button" type="submit">Получить в
+                                Telegram</button>
+                        </form>
+                    </div>
+                    <div class="popup__content__block2__policy">Нажимая кнопку, вы соглашаетесь с политикой<br>
+                        обработки персональных данных</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-offers" class="popup">
+        <div class="popup__body">
+            <a href="" class="popup__close close-popup"><svg role="presentation" class="t-popup__close-icon"
+                    width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg></a>
+            <div class="popup__content">
+                <div class="popup__content__block1">
+                    <div class="popup__content__block1__card">
+
+                    </div>
+                    <div class="popup__content__block1__text">
+                        <p class="popup__content__block1__text__title">Рассчитайте эффективность запуска</p>
+                        <p class="popup__content__block1__text__text">вместе с экспертом Tomoru</p>
+                        <ul class="popup__content__block1__text__list">
+                            <li class="popup__content__block1__text__list__el green">Какой бюджет нужен на запуск робота
+                            </li>
+                            <li class="popup__content__block1__text__list__el green">Какие конверсии в кейсах с вашей
+                                задачей
+                            </li>
+                            <li class="popup__content__block1__text__list__el green">Поговорите с роботом вживую</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup__content__block2">
+                    <p class="popup__content__block2__title">По какому номеру</p>
+                    <p class="popup__content__block2__text">мы можем вам позвонить?</p>
+                    <div class="popup__content__block2__field field">
+                        <form id="form-offers" class="popup__content__block2__field">
+                            <input class="popup__content__block2__field__name _req-offers" type="text" name="name"
+                                placeholder="Как вас зовут?">
+                            <input class="popup__content__block2__field__phone _req-offers" type="text" id="phonePopup-offers"
+                                name="phone" placeholder="+7 (999) 999-9999">
+                                <button class="phone__button" type="submit">Поговорить с экспертом</button>
+                        </form>
+                    </div>
+                    <div class="popup__content__block2__policy">Нажимая кнопку, вы соглашаетесь с политикой<br>
+                        обработки персональных данных</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-question" class="popup">
+        <div class="popup__body">
+            <a href="" class="popup__close close-popup"><svg role="presentation" class="t-popup__close-icon"
+                    width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg></a>
+            <div class="popup__content">
+                <div class="popup__content__block1">
+                    <div class="popup__content__block1__card">
+
+                    </div>
+                    <div class="popup__content__block1__text" style="align-items: center; margin: 0;">
+                        <img src="img/logo.svg" alt="logo" style="margin-bottom: 50px;">
+                        <p class="popup__content__block1__text__title">Мы ответим за 30 минут</p>
+                        <p class="popup__content__block1__text__text" style="margin-top: 0; font-size: 16px;">или
+                            подарим 100 минут на баланс робота</p>
+                    </div>
+                </div>
+                <div class="popup__content__block2">
+                    <p class="popup__content__block2__title"></p>
+                    <p class="popup__content__block2__text"></p>
+                    <div class="popup__content__block2__field field">
+                        <form id="form-question" class="popup__content__block2__field">
+                            <input class="popup__content__block2__field__name _req-question" type="text" name="name"
+                                placeholder="Ваш вопрос">
+                            <input class="popup__content__block2__field__phone _req-question" type="text" id="phonePopup-question"
+                                name="phone" placeholder="+7 (999) 999-9999">
+                                <button class="phone__button" type="submit">Поговорить с экспертом</button>
+                        </form>
+                    </div>
+                    <div class="popup__content__block2__policy">Нажимая кнопку, вы соглашаетесь с политикой<br>
+                        обработки персональных данных</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-zoom" class="popup">
+        <div class="popup__body">
+            <a href="" class="popup__close close-popup"><svg role="presentation" class="t-popup__close-icon"
+                    width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg></a>
+            <div class="popup__content">
+                <div class="popup__content__block1">
+                    <div class="popup__content__block1__card">
+                        <img src="img/popup-zoom.webp" alt="photo" class="popup__content__block1__card__img">
+                        <div class="popup__content__block1__card__text"><strong>Денис Балюра</strong><br>Основатель
+                            Tomoru.ru</div>
+                    </div>
+                    <div class="popup__content__block1__text">
+                        <p class="popup__content__block1__text__title">Zoom-встреча с экспертом</p>
+                        <p class="popup__content__block1__text__text">За 30-40 минут на встрече:</p>
+                        <ul class="popup__content__block1__text__list">
+                            <li class="popup__content__block1__text__list__el">Узнаете подходит ли робот вашей компании
+                            </li>
+                            <li class="popup__content__block1__text__list__el">Посмотрите успешные кейсы с вашей задачей
+                            </li>
+                            <li class="popup__content__block1__text__list__el">Поговорите с роботом вживую</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup__content__block2">
+                    <p class="popup__content__block2__title">По какому номеру</p>
+                    <p class="popup__content__block2__text">мы можем подтвердить встречу?</p>
+                    <div class="popup__content__block2__field field">
+                        <form id="form-zoom" class="popup__content__block2__field">
+                            <input class="popup__content__block2__field__name _req-zoom" type="text" name="name"
+                                placeholder="Как вас зовут?">
+                            <input class="popup__content__block2__field__phone _req-zoom" type="text" id="phonePopup-zoom"
+                                name="phone" placeholder="+7 (999) 999-9999">
+                                <button style="background-color: #0084f4;" class="phone__button" type="submit">Назначить
+                                встречу</button>
+                        </form>
+                    </div>
+                    <div class="popup__content__block2__policy">Нажимая кнопку, вы соглашаетесь с политикой<br>
+                        обработки персональных данных</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-rate" class="popup">
+        <div class="popup__body">
+            <a href="" class="popup__close close-popup"><svg role="presentation" class="t-popup__close-icon"
+                    width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg></a>
+            <img class="popup__content phone" style="padding: 0;" src="/img/table.svg" alt="table">
+            <img style="display:none;" class="popup__content__phone" style="padding: 0;" src="/img/table-phone.svg" alt="table">
+
+        </div>
+    </div>
+
+    <div id="popup-youtube" class="popup">
+        <div class="popup__body">
+            <a href="" class="popup__close close-popup"><svg role="presentation" class="t-popup__close-icon"
+                    width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg></a>
+            <div class="popup__content">
+                <div class="popup__content__block1 popup__ipad">
+                    <div class="popup__content__block1__card">
+                        <img style="height: 172px; width: 305px;" src="img/videoBGI.webp" alt="photo"
+                            class="popup__content__block1__card__img">
+                    </div>
+                    <div class="popup__content__block1__text">
+                        <p class="popup__content__block1__text__title">Видео: Разбор Tomoru в эфире Sellesta</p>
+                        <ul class="popup__content__block1__text__list">
+                            <li class="popup__content__block1__text__list__el red">Как устроена компания Tomoru
+                            </li>
+                            <li class="popup__content__block1__text__list__el red">Чем робот лучше автозвонков
+                            </li>
+                            <li class="popup__content__block1__text__list__el red">Какой маркетинг работает в 2022</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="popup__content__block2">
+                    <p class="popup__content__block2__title">На какой номер отправить</p>
+                    <p class="popup__content__block2__text">ссылку на запись эфира?</p>
+                    <div class="popup__content__block2__field field">
+                        <form id="form-youtube" class="popup__content__block2__field">
+                            <input class="popup__content__block2__field__name _req-youtube" type="text" name="name"
+                                placeholder="Как вас зовут?">
+                            <input class="popup__content__block2__field__phone _req-youtube" type="text" id="phonePopup-youtube"
+                                name="phone" placeholder="+7 (999) 999-9999">
+                                <button style="background-color: #ff0000;" class="phone__button" type="submit">Смотреть
+                                видео</button>
+                        </form>
+                    </div>
+                    <div class="popup__content__block2__policy">Нажимая кнопку, вы соглашаетесь с политикой<br>
+                        обработки персональных данных</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-done" class="popup">
+        <div class="popup__body">
+            <a href="" class="popup__close close-popup"><svg role="presentation" class="t-popup__close-icon"
+                    width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                        <rect
+                            transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) "
+                            x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                </svg></a>
+            <div style="align-items: center; padding: 3% 5%;" class="popup__content">
+                <svg style="width: 50;
+                height: 50;
+                fill: rgb(98, 197, 132);" width="50" height="50" fill="#62C584">
+                    <path
+                        d="M25.1 49.28A24.64 24.64 0 0 1 .5 24.68 24.64 24.64 0 0 1 25.1.07a24.64 24.64 0 0 1 24.6 24.6 24.64 24.64 0 0 1-24.6 24.61zm0-47.45A22.87 22.87 0 0 0 2.26 24.68 22.87 22.87 0 0 0 25.1 47.52a22.87 22.87 0 0 0 22.84-22.84A22.87 22.87 0 0 0 25.1 1.83z">
+                    </path>
+                    <path
+                        d="M22.84 30.53l-4.44-4.45a.88.88 0 1 1 1.24-1.24l3.2 3.2 8.89-8.9a.88.88 0 1 1 1.25 1.26L22.84 30.53z">
+                    </path>
+                </svg>
+                <p style="text-align: center; margin-top: 30px;" class="popup__done__text">Спасибо! Менеджеры уже<br>сражаются за возможность<br>связаться с вами.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/playButton.js"></script>
+    <script src="js/playButtonBrast.js"></script>
+    <script src="js/playButtonNovosel.js"></script>
+    <script src="js/playButtonApart.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+    <script src="js/counties.js"></script>
+    <script src="js/phonecode.js"></script>
+    <script src="js/videoplayer.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/popup-phone.js"></script>
+    <script>
+        $(function () {
+            $('#phone').phonecode({
+                preferCo: 'ru'
+            });
+        });
+    </script>
+    <script type="text/javascript" src="jquery.maskedinput-master/dist/jquery.maskedinput.js"></script>
+    <script src="js/mail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.footer{
+    background-color: #f8f9fd;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        height: 200px;
+    }
+
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        font-weight: 500;
+
+        &__title{
+            font-weight: 700;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .footer{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+    }
+}
